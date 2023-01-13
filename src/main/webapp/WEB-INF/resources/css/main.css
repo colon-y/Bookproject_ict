@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#main_box{
+	width: 1500px;
+	height: auto;
+	margin: auto;
+	background-color: #cccccc;
+	text-align: center;
+	margin: auto;
+}
+
+#header{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+#content{
+	width: 700px;
+	height: auto;
+	float:left;
+}
+
+#aside{
+	width: 100px;
+	height: auto;
+	float: left;
+	
+}
+
+#footer{
+	height: 50px;
+	clear: both;
+	
+}

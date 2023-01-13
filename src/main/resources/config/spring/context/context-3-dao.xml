@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+	<bean id="book_dao" class="dao.BookDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="cart_dao" class="dao.CartDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="comment_dao" class="dao.CommentDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="like_dao" class="dao.LikeDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="main_dao" class="dao.MainDaoImpl">
+		<property name="sqlSession" ref="sqlSession"></property>
+	</bean>
+	
+	<bean id="member_dao" class="dao.MemberDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="notice_dao" class="dao.NoticeDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="pay_dao" class="dao.PayDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="review_dao" class="dao.ReviewDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="stock_in_dao" class="dao.Stock_In_DaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="stock_out_dao" class="dao.Stock_Out_DaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="stock_remain_dao" class="dao.Stock_Remain_DaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+	
+	<bean id="usedbook_dao" class="dao.UsedbookDaoImpl">
+		<constructor-arg ref="sqlSession"/>
+	</bean>
+		
+</beans>
